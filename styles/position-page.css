@@ -1,1 +1,77 @@
+.nav-bar {
+	/*pixel distance from the child elements*/
+	padding-left: 50px;
+	padding-right: 50px;
+}
 
+nav {
+	background-color: grey;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+}
+
+nav img {
+	/*rounds the image*/
+	border-radius: 50%;
+	border: 1px solid;
+	height: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+}
+
+nav ul {
+	/*displays the list in the same "line" as the icon*/
+	display: inline-block;
+	/*removes the dots*/
+	list-style: none;
+}
+
+nav li {
+	/*displays items in a single line*/
+	display: inline-block;
+}
+
+nav li::after {
+	/*places | between list items*/
+	content: "|";
+	margin-left: 2px;
+}
+
+body {
+	/*sets the background image to cover the page and doesn't repeat*/
+	background: url(../images/outerspace_landscape.jpeg) no-repeat;
+	background-size: cover;
+}
+
+main {
+	/*pixel distance between main section and nav. Ensures nav stays at the top*/
+	padding-top: 90px;
+	min-width: 1024px;
+}
+
+.center-box {
+	width: 600px;
+	height: 300px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px dotted green;
+	position: relative;
+}
+
+.spacecat, .spacedog {
+	/*allows imgs to be offset in relation to their parent(center-box)*/
+	position: absolute;
+	width: 200px;
+}
+.spacecat {
+	top: -90px;
+	left: -90px;
+}
+
+.spacedog {
+	bottom: -100px;
+  	right: -60px;
+}
